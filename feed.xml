@@ -1,0 +1,154 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://0.0.0.0:8080/</id>
+  <title>Zhe's blog</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2023-07-14T19:52:50+08:00</updated>
+  <author>
+    <name>Zhe</name>
+    <uri>http://0.0.0.0:8080/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:8080/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="http://0.0.0.0:8080/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 Zhe </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>RIDE</title>
+    <link href="http://0.0.0.0:8080/posts/RIDE/" rel="alternate" type="text/html" title="RIDE" />
+    <published>2023-07-12T19:33:50+08:00</published>
+  
+    <updated>2023-07-12T19:33:50+08:00</updated>
+  
+    <id>http://0.0.0.0:8080/posts/RIDE/</id>
+    <content src="http://0.0.0.0:8080/posts/RIDE/" />
+    <author>
+      <name>Zhe</name>
+    </author>
+
+  
+    
+    <category term="writing" />
+    
+    <category term="y2023" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      One
+show me the blog
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>JD</title>
+    <link href="http://0.0.0.0:8080/posts/JD/" rel="alternate" type="text/html" title="JD" />
+    <published>2022-04-01T12:30:11+08:00</published>
+  
+    <updated>2022-04-01T12:30:11+08:00</updated>
+  
+    <id>http://0.0.0.0:8080/posts/JD/</id>
+    <content src="http://0.0.0.0:8080/posts/JD/" />
+    <author>
+      <name>Zhe</name>
+    </author>
+
+  
+    
+    <category term="writing" />
+    
+    <category term="mylife" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      通信营业厅现在购买不到低月租的号码，但网上能够购买到，咨询了商家原因，低月租营业厅赚不了钱，按现在我购买的59元一个号（其中30元是预充话费、10元是电商利润、29元就是其它费用）。
+流程在提交订单时，被拦截（地址不符合签收标准）。我的新地址是在订单提交前新添加的办公地址，换成我近期收货地址订单提交成功。（可能的解释是JD的风控规则对这类需要持身份证签收的地址需要本人地址——判断标准近期或者多次成功收货地址）。
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>@RequestParam使用</title>
+    <link href="http://0.0.0.0:8080/posts/@RequestParam%E4%BD%BF%E7%94%A8/" rel="alternate" type="text/html" title="@RequestParam使用" />
+    <published>2021-04-01T12:30:11+08:00</published>
+  
+    <updated>2021-04-01T12:30:11+08:00</updated>
+  
+    <id>http://0.0.0.0:8080/posts/@RequestParam%E4%BD%BF%E7%94%A8/</id>
+    <content src="http://0.0.0.0:8080/posts/@RequestParam%E4%BD%BF%E7%94%A8/" />
+    <author>
+      <name>Zhe</name>
+    </author>
+
+  
+    
+    <category term="writing" />
+    
+    <category term="inbox" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      @RequestParam使用_砥砺前行冲冲冲的博客-CSDN博客_@requestparam
+
+1、加与不加的区别
+
+@RequestMapping("/list1")
+public String test1(int userId) {
+　　return "list";
+}
+@RequestMapping("/list2")
+public String test2(@RequestParam int userId) {
+　　return "list";
+}
+
+
+
+（1）不加@RequestParam前端的参数名需要和后端控制器的变量名保持一致才能生效
+
+（2）不加@RequestParam参数为非必传，加@RequestParam写法参数为必传。但@RequestParam可以通过@RequestParam(required = false)设置为非必传。
+
+（3）@Request...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
