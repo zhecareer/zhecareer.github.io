@@ -45,6 +45,7 @@
 <meta property="og:url" content="http://0.0.0.0:8080/" />
 <meta property="og:site_name" content="Zhe’s blog" />
 <meta property="og:type" content="website" />
+<link rel="next" href="http://0.0.0.0:8080/page2" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Zhe’s blog" />
 <script type="application/ld+json">
@@ -505,13 +506,13 @@
 
 <div id="post-list">
   
-    <a href="/posts/RIDE/" class="card-wrapper">
+    <a href="/posts/Git%E5%A4%9A%E8%B4%A6%E6%88%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            RIDE
+            Git多账户使用说明
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -522,9 +523,23 @@
 
 
 
-              One
-show me the blog
+              用户信息配置
 
+对于多账户，不使用--global，而是在仓库根目录设置账户信息（即此类方式对每个仓库设置不同的账户）。
+
+
+  我选择此方式的原因是之前已有global账户又不想删除
+
+
+举例
+
+我的本地全局账户是quanju，想在本地多加一个账户xinhu，远端Gitee有个仓库YuQuePics
+
+1.配置多个SSH-key
+
+1.1.根据邮箱生成指定名称的rsa
+
+$ ssh-key...
             </p>
           </div>
 
@@ -543,11 +558,11 @@ show me the blog
 
 <em
   class=""
-  data-ts="1689161630"
+  data-ts="1657621422"
   data-df="YYYY/MM/DD"
   
 >
-  2023/07/12
+  2022/07/12
 </em>
 
 
@@ -556,8 +571,9 @@ show me the blog
                 <i class="far fa-folder-open fa-fw me-1"></i>
                 <span class="categories">
                   
-                    writing,
-                    y2023
+                    IT业务,
+                    y2022,
+                    Git相关
                 </span>
               
             </div>
@@ -570,13 +586,13 @@ show me the blog
       </div>
     </a>
   
-    <a href="/posts/JD/" class="card-wrapper">
+    <a href="/posts/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87git_clone%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93%E9%A1%B9%E7%9B%AE/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            JD
+            如何通过git clone克隆仓库项目
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -587,8 +603,13 @@ show me the blog
 
 
 
-              通信营业厅现在购买不到低月租的号码，但网上能够购买到，咨询了商家原因，低月租营业厅赚不了钱，按现在我购买的59元一个号（其中30元是预充话费、10元是电商利润、29元就是其它费用）。
-流程在提交订单时，被拦截（地址不符合签收标准）。我的新地址是在订单提交前新添加的办公地址，换成我近期收货地址订单提交成功。（可能的解释是JD的风控规则对这类需要持身份证签收的地址需要本人地址——判断标准近期或者...
+              在前面我们介绍了Git支持多种数据传输协议，有 git:// 协议、http(s):// 和 user@server:/path.git表示的 SSH 传输协议。我们可以通过这三种协议，对项目/仓库进行克隆操作。
+
+下面，我们将以仓库 git@git.oschina.net:zxzllyj/sample-project.git 为例，对项目/仓库进行克隆。
+
+通过HTTPS协议克隆
+
+git...
             </p>
           </div>
 
@@ -607,11 +628,11 @@ show me the blog
 
 <em
   class=""
-  data-ts="1648787411"
+  data-ts="1652244560"
   data-df="YYYY/MM/DD"
   
 >
-  2022/04/01
+  2022/05/11
 </em>
 
 
@@ -620,8 +641,10 @@ show me the blog
                 <i class="far fa-folder-open fa-fw me-1"></i>
                 <span class="categories">
                   
-                    writing,
-                    mylife
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
                 </span>
               
             </div>
@@ -634,13 +657,13 @@ show me the blog
       </div>
     </a>
   
-    <a href="/posts/@RequestParam%E4%BD%BF%E7%94%A8/" class="card-wrapper">
+    <a href="/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            @RequestParam使用
+            如何进行分支合并
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -651,16 +674,19 @@ show me the blog
 
 
 
-              @RequestParam使用_砥砺前行冲冲冲的博客-CSDN博客_@requestparam
+              分支合并分为两种情况,一种是本地分支合并,一种是远程分支合并到本地分支,下面,分别用GIF动画演示
 
-1、加与不加的区别
+本地合并分支:
 
-@RequestMapping(&quot;/list1&quot;)
-public String test1(int userId) {
-　　return &quot;list&quot;;
-}
-@RequestMapping(&quot;/list2&quot;)
-public String test2(@RequestPara...
+
+
+远程分支合并
+
+
+
+来源Gitee
+
+
             </p>
           </div>
 
@@ -679,11 +705,11 @@ public String test2(@RequestPara...
 
 <em
   class=""
-  data-ts="1617251411"
+  data-ts="1652244555"
   data-df="YYYY/MM/DD"
   
 >
-  2021/04/01
+  2022/05/11
 </em>
 
 
@@ -692,8 +718,541 @@ public String test2(@RequestPara...
                 <i class="far fa-folder-open fa-fw me-1"></i>
                 <span class="categories">
                   
-                    writing,
-                    inbox
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            如何进行版本回退
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              版本回退有多种方式,下面一一演示:
+
+回退到当前版本(放弃所有修改)
+
+
+
+放弃某一个文件的修改
+
+
+
+回退到某一版本但保存自该版本起的修改
+
+
+
+回退到某一版本并且放弃所有的修改
+
+
+
+回退远程仓库的版本
+
+先在本地切换到远程仓库要回退的分支对应的本地分支，然后本地回退至你需要的版本，然后执行：
+
+git push &amp;lt;仓库名&amp;gt; &amp;lt;分支名&amp;gt; -f 
+
+
+如何以当前版本...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244550"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2%E6%95%B0%E9%87%8F%E5%8F%8A%E4%BF%AE%E6%94%B9%E8%87%AA%E5%B7%B1commit%E4%B8%AD%E7%9A%84%E9%82%AE%E7%AE%B1/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            如何减少提交历史数量及修改自己commit中的邮箱
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              
+  本节中内容来自 https://git-scm.com/book/zh/v2/Git-工具-重写历史 最终解释权归该页面编撰者所有,本页面仅引用以及对内容进行一定的排版,本文档编撰者对本页面内容无版权
+
+
+许多时候，在使用 Git 时，可能会因为某些原因想要修正提交历史。 Git 很棒的一点是它允许你在最后时刻做决定。  你可以在将暂存区内容提交前决定哪些文件进入提交，可以通过 sta...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244545"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E5%A6%82%E4%BD%95%E4%BB%8E%E4%BC%97%E5%A4%9A%E6%8F%90%E4%BA%A4%E4%B8%AD%E4%BF%9D%E7%95%99%E4%B8%AA%E5%88%AB%E6%8F%90%E4%BA%A4/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            如何从众多提交中保留个别提交
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              如果说在众多提交中,已某个提交为基准,只保留上游众多提交中的某个或者某几个,可以使用 cherry-pick命令,具体是:
+
+git cherry-pick &amp;lt;commit id&amp;gt;
+
+
+如果没有冲突,则回显示如下:
+
+Finished one cherry-pick.
+# On branch dev
+# Your branch is ahead of &#39;origin/dev&#39; b...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244540"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E4%BB%A3%E7%A0%81%E5%86%B2%E7%AA%81/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            如何处理代码冲突
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              冲突合并一般是因为自己的本地做的提交和服务器上的提交有差异，并且这些差异中的文件改动，Git不能自动合并，那么就需要用户手动进行合并
+
+如我这边执行git pull origin master
+
+如果Git能够自动合并，那么过程看起来是这样的
+
+
+
+拉取的时候，Git自动合并，并产生了一次提交。
+
+如果Git不能够自动合并，那么会提示
+
+
+
+这个时候我们就可以知道README.MD有冲突，需...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244535"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E8%8E%B7%E5%8F%96%E9%A1%B9%E7%9B%AE%E7%9A%84Git%E4%BB%93%E5%BA%93/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            获取项目的Git仓库
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              有两种取得 Git 项目仓库的方法。第一种是在现存的目录下，通过导入所有文件来创建新的 Git 仓库。第二种是从已有的 Git 仓库克隆出一个新的镜像仓库来。
+
+在工作目录中初始化新仓库
+
+要对现有的某个项目开始用 Git 管理，只需到此项目所在的目录，执行：
+
+$ git init
+
+
+初始化后，在当前目录下会出现一个名为 .git 的目录，所有 Git  需要的数据和资源都存放在这个目录...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244530"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E8%8E%B7%E5%8F%96Git%E5%B8%AE%E5%8A%A9/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            获取Git帮助
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              想了解 Git 的各式工具该怎么用，可以阅读它们的使用帮助，方法有三：
+
+$ git help &amp;lt;verb&amp;gt;
+$ git &amp;lt;verb&amp;gt; --help
+$ man git-&amp;lt;verb&amp;gt;
+
+
+比如，要学习 config 命令可以怎么用，运行：
+
+$ git help config
+
+
+来源Gitee
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244525"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8CGit%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            初次运行Git前的配置
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              在新的系统上，我们一般都需要先配置下自己的 Git 工作环境。配置工作只需一次，以后升级时还会沿用现在的配置。当然，如果需要，你随时可以用相同的命令修改已有的配置。
+
+Git 提供了一个叫做 git config 的工具（译注：实际是 git-config 命令，只不过可以通过 git 加一个名字来呼叫此命令。），专门用来配置或读取相应的工作环境变量。而正是由这些环境变量，决定了 Git 在...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1652244520"
+  data-df="YYYY/MM/DD"
+  
+>
+  2022/05/11
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    IT业务,
+                    y2022,
+                    Git相关,
+                    Gitee帮助中心
                 </span>
               
             </div>
@@ -708,6 +1267,78 @@ public String test2(@RequestPara...
   
 </div>
 <!-- #post-list -->
+
+
+  <!-- The paginator for post list on HomgPage. -->
+
+<ul class="pagination align-items-center mt-4 mb-1 ps-lg-2">
+  <!-- left arrow -->
+  
+
+  <li class="page-item disabled">
+    <a class="page-link btn-box-shadow" href="#" aria-label="previous-page">
+      <i class="fas fa-angle-left"></i>
+    </a>
+  </li>
+
+  <!-- page numbers -->
+  
+  
+
+  
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item  active">
+        <a
+          class="page-link btn-box-shadow"
+          href="/"
+        >1</a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item ">
+        <a
+          class="page-link btn-box-shadow"
+          href="/page2"
+        >2</a>
+      </li>
+    
+  
+
+  <!-- mobile pagination -->
+  <li class="page-index align-middle">
+    <span>1</span>
+    <span class="text-muted">/ 2</span>
+  </li>
+
+  <!-- right arrow -->
+  
+
+  <li class="page-item ">
+    <a class="page-link btn-box-shadow" href="/page2" aria-label="next-page">
+      <i class="fas fa-angle-right"></i>
+    </a>
+  </li>
+</ul>
+<!-- .pagination -->
 
 
 
@@ -754,26 +1385,7 @@ public String test2(@RequestPara...
 
 
 
-  
-    
-    
-    
-    
-      
-        
-        
 
-
-
-  <div id="access-tags">
-    <div class="panel-heading">热门标签</div>
-    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/info/">info</a>
-      
-    </div>
-  </div>
 
 
     </div>
@@ -806,26 +1418,7 @@ public String test2(@RequestPara...
 
 
 
-  
-    
-    
-    
-    
-      
-        
-        
 
-
-
-  <div id="access-tags">
-    <div class="panel-heading">热门标签</div>
-    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/info/">info</a>
-      
-    </div>
-  </div>
 
 
     </div>
