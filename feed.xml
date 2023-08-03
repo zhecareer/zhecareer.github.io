@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:8080/</id>
   <title>Zhe's blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-07-18T20:03:29+08:00</updated>
+  <updated>2023-08-03T14:15:23+08:00</updated>
   <author>
     <name>Zhe</name>
     <uri>http://0.0.0.0:8080/</uri>
@@ -74,6 +74,59 @@ $ ssh-keygen -t rsa -C 'xinhu@example.com' -f ~/.ssh/gitee_xinhuGit_id_rsa
 # gitee
 Host xinhu
 HostName gitee.c...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Git使用者在Gitee上的体验</title>
+    <link href="http://0.0.0.0:8080/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/" rel="alternate" type="text/html" title="Git使用者在Gitee上的体验" />
+    <published>2022-05-30T19:39:26+08:00</published>
+  
+    <updated>2022-05-30T19:39:26+08:00</updated>
+  
+    <id>http://0.0.0.0:8080/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/</id>
+    <content src="http://0.0.0.0:8080/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/" />
+    <author>
+      <name>Zhe</name>
+    </author>
+
+  
+    
+    <category term="IT业务" />
+    
+    <category term="y2022" />
+    
+    <category term="Git相关" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+背景
+
+故事来自B站开源青年一期节目
+
+为啥会收集这个故事呢，我在Gitee上有托管代码也用过Git，但故事里的背景我没遇到，如果以后遇到了那就拿来用。
+
+
+  故事案例
+
+  首先Fork了一个超过3G的项目，提示项目超过3G有三次瘦身机会，他使用了一次瘦身后成功Fork，使用clone命令将项目下载到本地始终不成功，他删除了除master以外的所有分支clone还是不成功，最后他在clone时加上参数depth，项目终于克隆到本地，项目修改完成但push提交不上去提示图片超过300M，咨询了经常使用Gitee的人，才知道要分好几次push然后在提交pr的时候合并。最终他用了1个小时将这个项目完成了升级，然后用7个小时在折腾Gitee，最后还没有明白如何顺利的将代码push上去。（PS，什么项目这么大，MySQL）
+
+
+
+  （目前20220527 奥思网络（gitee所属公司...
     </summary>
   
 
@@ -255,56 +308,6 @@ git reset HEAD~X //X代表你要回退的版本数量，是数字！！！！
 
 如何回退到和远程版本一样
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>如何减少提交历史数量及修改自己commit中的邮箱</title>
-    <link href="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2%E6%95%B0%E9%87%8F%E5%8F%8A%E4%BF%AE%E6%94%B9%E8%87%AA%E5%B7%B1commit%E4%B8%AD%E7%9A%84%E9%82%AE%E7%AE%B1/" rel="alternate" type="text/html" title="如何减少提交历史数量及修改自己commit中的邮箱" />
-    <published>2022-05-11T12:49:05+08:00</published>
-  
-    <updated>2022-05-11T12:49:05+08:00</updated>
-  
-    <id>http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2%E6%95%B0%E9%87%8F%E5%8F%8A%E4%BF%AE%E6%94%B9%E8%87%AA%E5%B7%B1commit%E4%B8%AD%E7%9A%84%E9%82%AE%E7%AE%B1/</id>
-    <content src="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2%E6%95%B0%E9%87%8F%E5%8F%8A%E4%BF%AE%E6%94%B9%E8%87%AA%E5%B7%B1commit%E4%B8%AD%E7%9A%84%E9%82%AE%E7%AE%B1/" />
-    <author>
-      <name>Zhe</name>
-    </author>
-
-  
-    
-    <category term="IT业务" />
-    
-    <category term="y2022" />
-    
-    <category term="Git相关" />
-    
-    <category term="Gitee帮助中心" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-  本节中内容来自 https://git-scm.com/book/zh/v2/Git-工具-重写历史 最终解释权归该页面编撰者所有,本页面仅引用以及对内容进行一定的排版,本文档编撰者对本页面内容无版权
-
-
-许多时候，在使用 Git 时，可能会因为某些原因想要修正提交历史。 Git 很棒的一点是它允许你在最后时刻做决定。  你可以在将暂存区内容提交前决定哪些文件进入提交，可以通过 stash  命令来决定不与某些内容工作，也可以重写已经发生的提交就像它们以另一种方式发生的一样。  这可能涉及改变提交的顺序，改变提交中的信息或修改文件，将提交压缩或是拆分，或完全地移除提交 - 在将你的工作成果与他人共享之前。
-
-在本节中，你可以学到如何完成这些非常有用的工作，这样在与他人分享你的工作成果时你的提交历史将如你所愿地展示出来。
-
-修改最后一次提交
-
-修改你最近一次提交可能是所有修改历史...
     </summary>
   
 

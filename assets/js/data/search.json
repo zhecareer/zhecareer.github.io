@@ -18,6 +18,23 @@
   },
   
   {
+    "title": "Git使用者在Gitee上的体验",
+    "url": "/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/",
+    "categories": "IT业务, y2022, Git相关",
+    "tags": "",
+    "date": "2022-05-30 19:39:26 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "背景故事来自B站开源青年一期节目为啥会收集这个故事呢，我在Gitee上有托管代码也用过Git，但故事里的背景我没遇到，如果以后遇到了那就拿来用。  故事案例  首先Fork了一个超过3G的项目，提示项目超过3G有三次瘦身机会，他使用了一次瘦身后成功Fork，使用clone命令将项目下载到本地始终不成功，他删除了除master以外的所有分支clone还是不成功，最后他在clone时加上参数de...",
+    "content": "背景故事来自B站开源青年一期节目为啥会收集这个故事呢，我在Gitee上有托管代码也用过Git，但故事里的背景我没遇到，如果以后遇到了那就拿来用。  故事案例  首先Fork了一个超过3G的项目，提示项目超过3G有三次瘦身机会，他使用了一次瘦身后成功Fork，使用clone命令将项目下载到本地始终不成功，他删除了除master以外的所有分支clone还是不成功，最后他在clone时加上参数depth，项目终于克隆到本地，项目修改完成但push提交不上去提示图片超过300M，咨询了经常使用Gitee的人，才知道要分好几次push然后在提交pr的时候合并。最终他用了1个小时将这个项目完成了升级，然后用7个小时在折腾Gitee，最后还没有明白如何顺利的将代码push上去。（PS，什么项目这么大，MySQL）  （目前20220527 奥思网络（gitee所属公司名称）允许用户上传仓库，规定每个仓库的大小上限为1个G，单个用户总容量为5个G (包含用户的所有仓库以及Wiki)，禁止大量的外链请求到本网站，并且不允许存放与代码无关的文件，如果代码实在有需要更大，请发邮件(git#oschina.cn)联系我们，说明使用场景和原因进行申请，我们邮件同意后方可上传更大的仓库，如果未经允许私自上传大仓库、与代码无关的文件或者大量的外链请求，奥思网络保留停止仓库的使用以及通知作者备份并删除的权利。 ）  信息来源Gitee知识点forkfork命令的解释，分出某一时间点的项目的副本，此命令的优势在于不干扰本项目的变动。用JVM来解释，运行时数据在线程之间是隔离的。cloneclone命令解释，远端项目拷贝到本地参数depth  摘抄参数depth描述  Create a shallow clone with a history truncated to the specified number of revisions. A shallow repository has a number of limitations (you cannot clone or fetch from it, nor push from nor into it), but is adequate if you are only interested in the recent history of a large project with a long history, and would want to send in fixes as patches.  简单来说，此参数针对大项目并且历史悠久（有很多次提交记录），并只对最近的变更有兴趣，指定一下层数，就可克隆出最近几层的项目# 克隆出最近1层的项目git clone --depth 1 git@xxx:XXpushpush命令解释，本地项目变动部分提交到远端项目pr（Pull Request）Pull Request，在Gitee平台上，PR只能用在Fork和被Fork的项目之间。  PS：Gitee 平台限制 Pull Request 源仓库与目标仓库需存在 fork 与被 fork 关系，故如果你要提交 Pull  Request，必须先 fork 一个仓库，然后才能对该仓库提交 Pull Request，同时，以该仓库为父仓库的所有仓库，您也均可以提交  Pull Request。  信息来源Gitee，Fork + PullRequest 模式文档信息  作者：tiger2019  版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）  发表日期： 2022年5月30日"
+  },
+  
+  {
     "title": "如何通过git clone克隆仓库项目",
     "url": "/posts/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87git_clone%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93%E9%A1%B9%E7%9B%AE/",
     "categories": "IT业务, y2022, Git相关, Gitee帮助中心",
@@ -236,6 +253,40 @@
     
     "snippet": "最早Git是在Linux上开发的，很长一段时间内，Git只能在Linux/Unix系统上运行。随着Git的使用逐渐普及，一些开发者也慢慢将Git移植到了Windows平台上。目前Git已经发展为可以在 Windows/macOS/Linux/Unix 上运行的跨平台工具。下载你可以从 https://git-scm.com/ 获得Git在Windows/macOS/Linux三个操作系统相关...",
     "content": "最早Git是在Linux上开发的，很长一段时间内，Git只能在Linux/Unix系统上运行。随着Git的使用逐渐普及，一些开发者也慢慢将Git移植到了Windows平台上。目前Git已经发展为可以在 Windows/macOS/Linux/Unix 上运行的跨平台工具。下载你可以从 https://git-scm.com/ 获得Git在Windows/macOS/Linux三个操作系统相关的安装包。也可以通过以下方式安装。Window 下的安装从 http://git-scm.com/download 上下载window版的客户端，以管理员身份运行后，一直选择下一步安装即可，请注意，如果你不熟悉每个选项的意思，请保持默认的选项Ubuntu 下安装# 在终端下执行 apt-get install git Centos/Redhat 安装# 在终端下执行 yum install gitFedora23 安装# 在终端下执行 dnf install git # 或者 yum install gitFedora22/21 安装# 在终端下执行 yum install gitSUSE/OPENSUSE安装# 在终端下执行 sudo zypper install gitMac OS X 安装# 在终端下执行brew install git # (注:请自行解决环境变量以及Brew工具的问题)编译安装(注:仅适合非window系统)从 https://github.com/git/git/releases 上选取一个版本下载，解压缩后进入到 Git 的目录然后依次执行以下代码:make configure./configuremake allsudo make install注意:如果遇上无法编译的问题，请自行通过搜索引擎来查找 Git 所需的依赖如果以上一切正常，打开终端(Window下请打开安装git时一并安装的bash) 输入 git –version 应该会显示如下类似的信息git version 2.5.0来源Gitee"
+  },
+  
+  {
+    "title": "处理KMS激活失败错误码0xC004F035",
+    "url": "/posts/%E5%A4%84%E7%90%86KMS%E6%BF%80%E6%B4%BB%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF%E7%A0%810xC004F035/",
+    "categories": "IT业务, y2021",
+    "tags": "",
+    "date": "2021-09-26 23:02:42 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "因为非OEM的操作系统，没有SLIC列表，这就需要刷入SLIC。这里使用DBSLDR，直接点“安装”按钮，等待刷入完成后重启电脑就可以了【图1】内容参考：齐鲁工业大学",
+    "content": "因为非OEM的操作系统，没有SLIC列表，这就需要刷入SLIC。这里使用DBSLDR，直接点“安装”按钮，等待刷入完成后重启电脑就可以了【图1】内容参考：齐鲁工业大学"
+  },
+  
+  {
+    "title": "如何找回“此电脑（我的电脑）”",
+    "url": "/posts/win10%E5%A6%82%E4%BD%95%E6%89%BE%E5%9B%9E-%E6%AD%A4%E7%94%B5%E8%84%91-%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91/",
+    "categories": "IT业务, y2021",
+    "tags": "",
+    "date": "2021-05-24 11:54:42 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "刚刚装完系统看到空荡荡的桌面只有回收站，没有 “此电脑(我的电脑)” 是不是有点蒙？点任务栏的资源管理器发现进入的是快速访问而不是 “此电脑(我的电脑)” 是不是很恼火？这两个问题都可以解决。工具 / 原料  win10 电脑一台方法 / 步骤  1在桌面空白处单击右键，选择 “个性化”。  2左侧选择 “主题”，右侧选 “桌面图标设置”。  3勾上 “此电脑”，点击确定。  4桌面上就可以...",
+    "content": "刚刚装完系统看到空荡荡的桌面只有回收站，没有 “此电脑(我的电脑)” 是不是有点蒙？点任务栏的资源管理器发现进入的是快速访问而不是 “此电脑(我的电脑)” 是不是很恼火？这两个问题都可以解决。工具 / 原料  win10 电脑一台方法 / 步骤  1在桌面空白处单击右键，选择 “个性化”。  2左侧选择 “主题”，右侧选 “桌面图标设置”。  3勾上 “此电脑”，点击确定。  4桌面上就可以看到 “此电脑” 啦。  5如希望通过快速启动栏的资源管理器进入 “此电脑”，请打开资源管理器，点击 “查看”-&gt;“选项”。  6如图将 “快速访问” 改成 “此电脑” 即可。END出处链接"
   }
   
 ]
