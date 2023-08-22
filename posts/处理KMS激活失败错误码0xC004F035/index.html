@@ -837,174 +837,6 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
   
 
@@ -1026,6 +858,23 @@
 <!-- Fill with the other newlest posts -->
 
 
+
+  
+    
+    
+      
+      
+    
+  
+    
+    
+  
+    
+    
+      
+      
+    
+  
 
 
 
@@ -1094,7 +943,7 @@
         
         
         <div class="col">
-          <a href="/posts/%E8%8E%B7%E5%8F%96Git%E5%B8%AE%E5%8A%A9/" class="card post-preview h-100">
+          <a href="/posts/Git%E5%A4%9A%E8%B4%A6%E6%88%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1107,14 +956,14 @@
 
 <em
   class="small"
-  data-ts="1652244525"
+  data-ts="1657621422"
   data-df="YYYY/MM/DD"
   
 >
-  2022/05/11
+  2022/07/12
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>获取Git帮助</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Git多账户使用说明</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -1123,73 +972,24 @@
 
 
 
-                  想了解 Git 的各式工具该怎么用，可以阅读它们的使用帮助，方法有三：
+                  用户信息配置
+
+对于多账户，不使用--global，而是在仓库根目录设置账户信息（即此类方式对每个仓库设置不同的账户）。
+
+
+  我选择此方式的原因是之前已有global账户又不想删除
+
+
+举例
+
+我的本地全局账户是quanju，想在本地多加一个账户xinhu，远端Gitee有个仓库YuQuePics
+
+1.配置多个SSH-key
+
+1.1.根据邮箱生成指定名称的rsa
 
 1
-2
-3
-$ git help &amp;lt;verb&amp;gt;
-$ git &amp;lt;verb&amp;gt; --help
-$ man git-&amp;lt;verb&amp;gt;
-
-
-比如，要学习 config 命令可以怎么用，运行：
-
-1
-$ git help config
-
-
-来源Gitee
-
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/posts/%E8%8E%B7%E5%8F%96%E9%A1%B9%E7%9B%AE%E7%9A%84Git%E4%BB%93%E5%BA%93/" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1652244530"
-  data-df="YYYY/MM/DD"
-  
->
-  2022/05/11
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>获取项目的Git仓库</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  有两种取得 Git 项目仓库的方法。第一种是在现存的目录下，通过导入所有文件来创建新的 Git 仓库。第二种是从已有的 Git 仓库克隆出一个新的镜像仓库来。
-
-在工作目录中初始化新仓库
-
-要对现有的某个项目开始用 Git 管理，只需到此项目所在的目录，执行：
-
-1
-$ git init
-
-
-初始化后，在当前目录下会出现一个名为 .git 的目录，所有 Git  需要的数据和资源都存放在这个...
+$ ssh-k...
                 </p>
               </div>
             </div>
@@ -1219,11 +1019,11 @@ $ git init
 
   
     <a
-      href="/posts/Git%E5%AE%89%E8%A3%85/"
+      href="/posts/Git%E5%A4%9A%E8%B4%A6%E6%88%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
       class="btn btn-outline-primary"
       prompt="下一篇"
     >
-      <p>Git安装</p>
+      <p>Git多账户使用说明</p>
     </a>
   
 </div>

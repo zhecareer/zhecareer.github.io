@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:8080/</id>
   <title>Zhe's blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-08-03T14:15:23+08:00</updated>
+  <updated>2023-08-22T12:31:19+08:00</updated>
   <author>
     <name>Zhe</name>
     <uri>http://0.0.0.0:8080/</uri>
@@ -81,14 +81,14 @@ HostName gitee.c...
 
   
   <entry>
-    <title>Git使用者在Gitee上的体验</title>
-    <link href="http://0.0.0.0:8080/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/" rel="alternate" type="text/html" title="Git使用者在Gitee上的体验" />
-    <published>2022-05-30T19:39:26+08:00</published>
+    <title>处理KMS激活失败错误码0xC004F035</title>
+    <link href="http://0.0.0.0:8080/posts/%E5%A4%84%E7%90%86KMS%E6%BF%80%E6%B4%BB%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF%E7%A0%810xC004F035/" rel="alternate" type="text/html" title="处理KMS激活失败错误码0xC004F035" />
+    <published>2021-09-26T23:02:42+08:00</published>
   
-    <updated>2022-05-30T19:39:26+08:00</updated>
+    <updated>2021-09-26T23:02:42+08:00</updated>
   
-    <id>http://0.0.0.0:8080/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/</id>
-    <content src="http://0.0.0.0:8080/posts/Git%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8Gitee%E4%B8%8A%E7%9A%84%E4%BD%93%E9%AA%8C/" />
+    <id>http://0.0.0.0:8080/posts/%E5%A4%84%E7%90%86KMS%E6%BF%80%E6%B4%BB%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF%E7%A0%810xC004F035/</id>
+    <content src="http://0.0.0.0:8080/posts/%E5%A4%84%E7%90%86KMS%E6%BF%80%E6%B4%BB%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF%E7%A0%810xC004F035/" />
     <author>
       <name>Zhe</name>
     </author>
@@ -97,9 +97,7 @@ HostName gitee.c...
     
     <category term="IT业务" />
     
-    <category term="y2022" />
-    
-    <category term="Git相关" />
+    <category term="y2021" />
     
   
 
@@ -111,127 +109,13 @@ HostName gitee.c...
 
 
 
-      
-
-背景
-
-故事来自B站开源青年一期节目
-
-为啥会收集这个故事呢，我在Gitee上有托管代码也用过Git，但故事里的背景我没遇到，如果以后遇到了那就拿来用。
-
-
-  故事案例
-
-  首先Fork了一个超过3G的项目，提示项目超过3G有三次瘦身机会，他使用了一次瘦身后成功Fork，使用clone命令将项目下载到本地始终不成功，他删除了除master以外的所有分支clone还是不成功，最后他在clone时加上参数depth，项目终于克隆到本地，项目修改完成但push提交不上去提示图片超过300M，咨询了经常使用Gitee的人，才知道要分好几次push然后在提交pr的时候合并。最终他用了1个小时将这个项目完成了升级，然后用7个小时在折腾Gitee，最后还没有明白如何顺利的将代码push上去。（PS，什么项目这么大，MySQL）
+      因为非OEM的操作系统，没有SLIC列表，这就需要刷入SLIC。这里使用DBSLDR，直接点“安装”按钮，等待刷入完成后重启电脑就可以了
 
 
 
-  （目前20220527 奥思网络（gitee所属公司...
-    </summary>
-  
+【图1】
 
-  </entry>
-
-  
-  <entry>
-    <title>如何通过git clone克隆仓库项目</title>
-    <link href="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87git_clone%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93%E9%A1%B9%E7%9B%AE/" rel="alternate" type="text/html" title="如何通过git clone克隆仓库项目" />
-    <published>2022-05-11T12:49:20+08:00</published>
-  
-    <updated>2022-05-11T12:49:20+08:00</updated>
-  
-    <id>http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87git_clone%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93%E9%A1%B9%E7%9B%AE/</id>
-    <content src="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87git_clone%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93%E9%A1%B9%E7%9B%AE/" />
-    <author>
-      <name>Zhe</name>
-    </author>
-
-  
-    
-    <category term="IT业务" />
-    
-    <category term="y2022" />
-    
-    <category term="Git相关" />
-    
-    <category term="Gitee帮助中心" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      在前面我们介绍了Git支持多种数据传输协议，有 git:// 协议、http(s):// 和 user@server:/path.git表示的 SSH 传输协议。我们可以通过这三种协议，对项目/仓库进行克隆操作。
-
-下面，我们将以仓库 git@git.oschina.net:zxzllyj/sample-project.git 为例，对项目/仓库进行克隆。
-
-通过HTTPS协议克隆
-
-git clone https://gitee.com/zxzllyj/sample-project.git
-
-
-通过SSH协议克隆
-
-git clone git@gitee.com:zxzllyj/sample-project.git
-
-
-以克隆仓库git@gitee.com:zxzllyj/sample-project.git为例(注:本处使用的是ssh地址，因为演示机已经配置好ssh公钥，故可以使...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>如何进行分支合并</title>
-    <link href="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6/" rel="alternate" type="text/html" title="如何进行分支合并" />
-    <published>2022-05-11T12:49:15+08:00</published>
-  
-    <updated>2022-05-11T12:49:15+08:00</updated>
-  
-    <id>http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6/</id>
-    <content src="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6/" />
-    <author>
-      <name>Zhe</name>
-    </author>
-
-  
-    
-    <category term="IT业务" />
-    
-    <category term="y2022" />
-    
-    <category term="Git相关" />
-    
-    <category term="Gitee帮助中心" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      分支合并分为两种情况,一种是本地分支合并,一种是远程分支合并到本地分支,下面,分别用GIF动画演示
-
-本地合并分支:
-
-
-
-远程分支合并
-
-
-
-来源Gitee
-
+内容参考：齐鲁工业大学
 
     </summary>
   
@@ -240,14 +124,14 @@ git clone git@gitee.com:zxzllyj/sample-project.git
 
   
   <entry>
-    <title>如何进行版本回退</title>
-    <link href="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" rel="alternate" type="text/html" title="如何进行版本回退" />
-    <published>2022-05-11T12:49:10+08:00</published>
+    <title>如何找回“此电脑（我的电脑）”</title>
+    <link href="http://0.0.0.0:8080/posts/win10%E5%A6%82%E4%BD%95%E6%89%BE%E5%9B%9E-%E6%AD%A4%E7%94%B5%E8%84%91-%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91/" rel="alternate" type="text/html" title="如何找回“此电脑（我的电脑）”" />
+    <published>2021-05-24T11:54:42+08:00</published>
   
-    <updated>2022-05-11T12:49:10+08:00</updated>
+    <updated>2021-05-24T11:54:42+08:00</updated>
   
-    <id>http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</id>
-    <content src="http://0.0.0.0:8080/posts/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" />
+    <id>http://0.0.0.0:8080/posts/win10%E5%A6%82%E4%BD%95%E6%89%BE%E5%9B%9E-%E6%AD%A4%E7%94%B5%E8%84%91-%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91/</id>
+    <content src="http://0.0.0.0:8080/posts/win10%E5%A6%82%E4%BD%95%E6%89%BE%E5%9B%9E-%E6%AD%A4%E7%94%B5%E8%84%91-%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91/" />
     <author>
       <name>Zhe</name>
     </author>
@@ -256,11 +140,7 @@ git clone git@gitee.com:zxzllyj/sample-project.git
     
     <category term="IT业务" />
     
-    <category term="y2022" />
-    
-    <category term="Git相关" />
-    
-    <category term="Gitee帮助中心" />
+    <category term="y2021" />
     
   
 
@@ -272,42 +152,39 @@ git clone git@gitee.com:zxzllyj/sample-project.git
 
 
 
-      版本回退有多种方式,下面一一演示:
-
-回退到当前版本(放弃所有修改)
-
+      刚刚装完系统看到空荡荡的桌面只有回收站，没有 “此电脑(我的电脑)” 是不是有点蒙？点任务栏的资源管理器发现进入的是快速访问而不是 “此电脑(我的电脑)” 是不是很恼火？这两个问题都可以解决。
+工具 / 原料
 
 
-放弃某一个文件的修改
+  win10 电脑一台
 
 
-
-回退到某一版本但保存自该版本起的修改
-
+方法 / 步骤
 
 
-回退到某一版本并且放弃所有的修改
+  1
+在桌面空白处单击右键，选择 “个性化”。
+
+  2
+左侧选择 “主题”，右侧选 “桌面图标设置”。
+
+  3
+勾上 “此电脑”，点击确定。
+
+  4
+桌面上就可以看到 “此电脑” 啦。
+
+  5
+如希望通过快速启动栏的资源管理器进入 “此电脑”，请打开资源管理器，点击 “查看”-&amp;gt;“选项”。
+
+  6
+如图将 “快速访问” 改成 “此电脑” 即可。
+
+END
 
 
+出处链接
 
-回退远程仓库的版本
-
-先在本地切换到远程仓库要回退的分支对应的本地分支，然后本地回退至你需要的版本，然后执行：
-
-git push &amp;lt;仓库名&amp;gt; &amp;lt;分支名&amp;gt; -f 
-
-
-如何以当前版本为基础，回退指定个commit
-
-首先，确认你当前的版本需要回退多少个版本，然后计算出你要回退的版本数量，执行如下命令
-
-git reset HEAD~X //X代表你要回退的版本数量，是数字！！！！
-
-
-需要注意的是，如果你是合并过分支，那么背合并分支带过来的commit并不会被计入回退数量中，而是只计算一个，所以如果需要一次回退多个commit，不建议使用这种方法
-
-如何回退到和远程版本一样
-...
     </summary>
   
 
